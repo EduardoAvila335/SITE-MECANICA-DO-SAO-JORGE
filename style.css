@@ -1,0 +1,278 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    transition: 0.2s ease-in-out;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background-color: rgb(66, 66, 66);
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(54, 54, 54);
+    padding: 2px;
+    gap: 60px;
+    z-index: 99;
+}
+
+header .img {
+    width: 50px;
+}
+
+nav a {
+    color: rgb(180, 180, 30);
+    margin: 10px;
+}
+
+header a img:hover {
+    width: 55px;
+}
+
+nav a:hover {
+    font-size: 20px;
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.btns img:hover {
+    width: 30px;
+    height: 30px;
+}
+
+.btns img {
+    cursor: pointer;
+}
+
+.video video {
+    width: 118rem;
+    z-index: 2;
+}
+
+.content {
+    z-index: 2;
+    color: white;
+    margin-top: -300px;
+    max-width: 700px;
+}
+
+.content h2 {
+    font-size: 50px;
+    padding: 0 50px;
+}
+
+.content p {
+    line-height: 1.8;
+    padding: 0 50px;
+}
+
+
+.animacao {
+    transform: translateX(-200px);
+    filter: blur(3px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.animado {
+    transform: translateX(0px);
+    filter: blur(0px);
+    opacity: 1;
+    transition: all 1s;
+}
+
+.animado h2 {
+    transition-delay: 200ms;
+}
+
+.animado p {
+    transition-delay: 400ms;
+}
+
+.localização {
+    position: fixed;
+    top: 50%;
+    left: -30%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: 5;
+    transition: left 0.5s linear;
+    background-color: black;
+}
+
+.mascara {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.titulo {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 100px;
+    font-size: xx-large;
+    text-shadow: 0 0 5px white;
+   
+}
+
+.titulo span {
+    color: yellow;
+}
+
+/* .titulo::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    left: 43rem;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+} */
+
+
+.flex {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1200px;
+    display: none;
+}
+
+
+.sobre h3 {
+    position: relative;
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.sobre h3::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    left: 0rem;
+    bottom: -5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    transition-delay: 600ms;
+}
+
+
+.sobre p {
+    color: white;
+    line-height: 1.8;
+    font-weight: lighter;
+    transition-delay: 400ms;
+}
+
+
+.visivel {
+    display: flex;
+}
+
+
+.troca-de-carro {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -50px;
+    margin-right: 8rem;
+}
+
+.troca{
+    width: 100px;
+    height: 10px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 5px;
+}
+
+.troca.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
+    margin: 0 auto;
+    text-align: left;
+    width: 1700px;
+    margin: 100px;
+    gap: 80px;
+    margin-left: 12.5rem;
+}
+
+.grid div {
+    height: 30rem;
+    width: 40rem;
+    box-shadow: 0 0 10px white;
+}
+.grid div:hover {
+    transform: scale(1.1);
+}
+
+.grid section {
+    width: 500px;
+}
+
+.grid div h3 {
+    color: white;
+    text-shadow: 0 5px 0 black;
+    font-size: 30px;
+    padding: 0 20px;
+}
+.grid div p {
+    color: white;
+    font-size: medium;
+    width: 5;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+.grid div a {
+    color: black;
+    background-color: white;
+    width: 100px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px 3px;
+    cursor: pointer;
+    text-align: center;
+}
+.grid div a:hover {
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+
+.carros-esportivos {
+    background: url(img/carros-sport.jpg);
+    transition-delay: 200ms;
+}
+.carros-terra {
+    background: url(img/carros-terra.jpg);
+    transition-delay: 600ms;
+}
+.moto {
+    background: url(img/moto.jpg);
+    transition-delay: 200ms;
+}
+.caminhão {
+    background: url(img/caminhão.jpg);
+    transition-delay: 600ms;
+}
